@@ -1,0 +1,246 @@
+/* Base styles for images */
+img {
+    touch-action: none;
+    transition: transform 0.5s;
+    position: absolute;
+}
+
+/* Base styles for shape class */
+.shape {
+    height: 60px; /* Default size for shapes */
+}
+
+/* Styles for specific shape S2 */
+.S2 {
+    width: 80px;
+    height: 45px;
+}
+
+/* Styles for button container */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    position: absolute;
+    left: 10px; /* Adjust as needed */
+    top: 120px; /* Adjust as needed */
+}
+
+/* Base styles for buttons */
+button {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(153, 85, 153);
+    border-radius: 5px;
+    width: 145px;
+    height: 100px;
+    font-size: 30px; /* Reduced font size */
+    color: white;
+    font-weight: bold;
+    white-space: nowrap; /* Ensures text stays on one line */
+}
+
+/* Styles for links */
+a {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(153, 85, 153);
+    border-radius: 5px;
+    padding-left: 145px;
+    height: 100px;
+    font-size: 40.5px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Styles for the paragraph */
+p {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: rgb(153, 85, 153);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+    /* Styles for smaller screens */
+    button {
+        width: 120px;
+        height: 80px;
+        font-size: 25px; /* Reduced font size */
+    }
+    .shape {
+        height: 50px; /* Reduced height for shapes */
+    }
+    .S2 {
+        width: 70px;
+        height: 35px;
+    }
+    p {
+        font-size: 50px; /* Reduced font size for paragraph */
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    /* Styles for smaller landscape screens */
+    button {
+        width: 120px;
+        height: 80px;
+        font-size: 25px; /* Reduced font size */
+    }
+    .shape {
+        height: 50px; /* Reduced height for shapes */
+    }
+    .S2 {
+        width: 70px;
+        height: 35px;
+    }
+    p {
+        font-size: 50px; /* Reduced font size for paragraph */
+    }
+    .imgedit {
+        width: 130px; /* Adjust width for landscape */
+        height: 70px; /* Adjust height for landscape */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Styles for even smaller screens */
+    button {
+        width: 100px;
+        height: 70px;
+        font-size: 20px; /* Reduced font size */
+    }
+    .shape {
+        height: 40px; /* Reduced height for shapes */
+    }
+    .S2 {
+        width: 60px;
+        height: 30px;
+    }
+    p {
+        font-size: 40px; /* Reduced font size for paragraph */
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    /* Styles for even smaller landscape screens */
+    button {
+        width: 100px;
+        height: 70px;
+        font-size: 20px; /* Reduced font size */
+    }
+    .shape {
+        height: 40px; /* Reduced height for shapes */
+    }
+    .S2 {
+        width: 60px;
+        height: 30px;
+    }
+    p {
+        font-size: 40px; /* Reduced font size for paragraph */
+    }
+    .imgedit {
+        width: 110px; /* Adjust width for landscape */
+        height: 60px; /* Adjust height for landscape */
+    }
+}
+
+@media (max-width: 576px) {
+    /* Styles for very small screens */
+    button {
+        width: 80px;
+        height: 60px;
+        font-size: 15px; /* Reduced font size */
+    }
+    .shape {
+        height: 30px; /* Reduced height for shapes */
+    }
+    .S2 {
+        width: 50px;
+        height: 25px;
+    }
+    p {
+        font-size: 30px; /* Reduced font size for paragraph */
+    }
+}
+
+@media (max-width: 576px) and (orientation: landscape) {
+    /* Styles for very small landscape screens */
+    button {
+        width: 80px;
+        height: 60px;
+        font-size: 15px; /* Reduced font size */
+    }
+    .shape {
+        height: 30px; /* Reduced height for shapes */
+    }
+    .S2 {
+        width: 50px;
+        height: 25px;
+    }
+    p {
+        font-size: 30px; /* Reduced font size for paragraph */
+    }
+    .imgedit {
+        width: 90px; /* Adjust width for landscape */
+        height: 50px; /* Adjust height for landscape */
+    }
+}
+
+@media (max-width: 376px) {
+    /* Styles for extra small screens */
+    button {
+        width: 70px;
+        height: 50px;
+        font-size: 12px; /* Reduced font size */
+    }
+    .shape {
+        height: 25px; /* Reduced height for shapes */
+    }
+    .S2 {
+        width: 40px;
+        height: 20px;
+    }
+    p {
+        font-size: 20px; /* Reduced font size for paragraph */
+    }
+}
+
+@media (max-width: 376px) and (orientation: landscape) {
+    /* Styles for extra small landscape screens */
+    button {
+        width: 70px;
+        height: 50px;
+        font-size: 12px; /* Reduced font size */
+    }
+    .shape {
+        height: 25px; /* Reduced height for shapes */
+    }
+    .S2 {
+        width: 40px;
+        height: 20px;
+    }
+    p {
+        font-size: 20px; /* Reduced font size for paragraph */
+    }
+    .imgedit {
+        width: 80px; /* Adjust width for landscape */
+        height: 40px; /* Adjust height for landscape */
+    }
+}
+
+/* Snapping feature */
+.snapping {
+    transition: top 0.1s, left 0.1s;
+}
+
+/* Selected shape indicator */
+.selected {
+    outline: 2px solid red;
+}
